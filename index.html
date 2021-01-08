@@ -1,4 +1,4 @@
- <!--
+<!--
         Creating the base HTML structure for the carousel
     
         1) Create a parent div of 'carousel'
@@ -10,7 +10,8 @@
         7) On those buttons (prev & next) add aria-labels so that screen readers can read the text out loud to the user, on the previous slide button add 'Previous slide', and on the next slide button, add 'Next slide' - screen readers aren't great at describing '<' and '>' - so that's why we are adding aria-labels!
         8) Add 'carousel-item-visible' to the first 'carousel-item' class - the reason for this is because we will eventually hide all carousel items, but we always want to show the first one on loading the page!   
     -->
-    <html>
+
+<html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="styles.css">
     </head>
@@ -27,11 +28,11 @@
             </div>
             
             <div class="carousel-actions">
-                <button id="carousel-button-prev" aria-label="Previous Slidex"><</button>
+                <button id="carousel-button-prev" aria-label="Previous Slidex"></button>
                 <button id="carousel-button-next" aria-label="Next Slide">></button>
             </div>
         </div>
     
-        <script src="index.pack.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>
